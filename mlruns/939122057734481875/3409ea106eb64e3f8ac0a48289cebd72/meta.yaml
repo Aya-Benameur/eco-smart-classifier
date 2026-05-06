@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/eco-smart-classifier/mlruns/939122057734481875/3409ea106eb64e3f8ac0a48289cebd72/artifacts
+end_time: 1778087003109
+entry_point_name: ''
+experiment_id: '939122057734481875'
+lifecycle_stage: active
+run_id: 3409ea106eb64e3f8ac0a48289cebd72
+run_name: exp_3_xgboost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778087002786
+status: 3
+tags: []
+user_id: root

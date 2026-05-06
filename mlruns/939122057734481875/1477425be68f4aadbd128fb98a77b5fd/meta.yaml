@@ -1,0 +1,14 @@
+artifact_uri: file:///content/drive/MyDrive/eco-smart-classifier/mlruns/939122057734481875/1477425be68f4aadbd128fb98a77b5fd/artifacts
+end_time: 1778087003521
+entry_point_name: ''
+experiment_id: '939122057734481875'
+lifecycle_stage: active
+run_id: 1477425be68f4aadbd128fb98a77b5fd
+run_name: exp_4_rf_numerique
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778087003131
+status: 3
+tags: []
+user_id: root

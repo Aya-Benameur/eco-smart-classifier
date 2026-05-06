@@ -1,0 +1,10 @@
+artifact_location: file:///content/drive/MyDrive/eco-smart-classifier/mlruns/939122057734481875/models/m-87c5aebf33a942908aa3d84b35928b61/artifacts
+creation_timestamp: 1778086992091
+experiment_id: '939122057734481875'
+last_updated_timestamp: 1778087002337
+model_id: m-87c5aebf33a942908aa3d84b35928b61
+model_type: null
+name: model
+source_run_id: be48ae3981514d35817e6640ae5bab58
+status: 2
+status_message: null
