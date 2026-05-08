@@ -1,0 +1,50 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - path: data/raw/dataset_ProjetML_2026.csv
+      hash: md5
+      md5: ebca3e2a097a475cee3af2c152e90164
+      size: 2586532
+    - path: src/data_preprocessing.py
+      hash: md5
+      md5: cac7ec5fb1d0c8e59e37304f97a5de4a
+      size: 1357
+    outs:
+    - path: data/processed/X_test_classif.csv
+      hash: md5
+      md5: 169cdcf564501f4688f24c91fd472669
+      size: 330272
+    - path: data/processed/X_train_classif.csv
+      hash: md5
+      md5: 867d7703d35e04a9a3a362fd44060537
+      size: 1320806
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: f5547ba3a175c4fe9dba085eb5b0d56e
+      size: 5997
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: b9a9bd277bf88bdb91e3f10aa416f681
+      size: 23967
+  train:
+    cmd: python src/train_model.py
+    deps:
+    - path: data/processed/X_train_classif.csv
+      hash: md5
+      md5: 867d7703d35e04a9a3a362fd44060537
+      size: 1320806
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: b9a9bd277bf88bdb91e3f10aa416f681
+      size: 23967
+    - path: src/train_model.py
+      hash: md5
+      md5: c911a805f6f0dfa9684be8bb0b062c4d
+      size: 714
+    outs:
+    - path: models/multimodal_final_model.pkl
+      hash: md5
+      md5: cd6b481b78f6009235a704686cb6a192
+      size: 685273

@@ -1,0 +1,19 @@
+stages:
+  preprocess:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - data/raw/dataset_ProjetML_2026.csv
+    - src/data_preprocessing.py
+    outs:
+    - data/processed/X_test_classif.csv
+    - data/processed/X_train_classif.csv
+    - data/processed/y_test.csv
+    - data/processed/y_train.csv
+  train:
+    cmd: python src/train_model.py
+    deps:
+    - data/processed/X_train_classif.csv
+    - data/processed/y_train.csv
+    - src/train_model.py
+    outs:
+    - models/multimodal_final_model.pkl
