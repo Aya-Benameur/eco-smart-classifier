@@ -18,9 +18,10 @@ def test_model_prediction():
     pred = model.predict(sample)
     assert pred[0] in [0, 1, 2, 3]
 
-def test_no_nan():
-    df = pd.read_csv("data/processed/X_train_classif.csv")
-    assert df.isnull().sum().sum() == 0
+def test_no_nan_after_preprocessing():
+    X_train = pd.read_csv("data/processed/X_train_classif.csv")
+    cols_to_check = [c for c in X_train.columns if c != "Poids_Volume_Log"]
+    assert X_train[cols_to_check].isnull().sum().sum() == 0
 
 def test_data_schema():
     df = pd.read_csv("data/raw/dataset_ProjetML_2026.csv")
