@@ -1,11 +1,6 @@
-fastapi
-uvicorn
-numpy<2.0
-pandas<2.0
-scikit-learn
-scipy
-joblib
-pydantic
-matplotlib
-seaborn
 streamlit
+pandas
+numpy
+scikit-learn
+joblib
+plotly
